@@ -9,6 +9,7 @@ body{
   margin-bottom: 5%;
   max-width: 90%;
   background-color: lightgrey;
+  border-radius: 8px;
  }
 
 .zoekbalkText{
