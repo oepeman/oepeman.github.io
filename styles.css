@@ -1,6 +1,9 @@
+html{
+  background-color: black;
+}
 .searchbar{
   background-color: #ed2623;
   width: 400px;
   height: 100px;
-  border: 2px solid black;
+  border: 2px solid white;
 }
