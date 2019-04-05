@@ -1,4 +1,4 @@
-html{
+body{
   background-color: #2e2f30!important;
 }
 
@@ -9,3 +9,7 @@ html{
   max-width: 90%;
   background-color: lightgrey;
  }
+
+.zoekbalkText{
+  font-size: 18px;
+}
