@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="styles.css">
     <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <script>
       // Initialize Firebase
       var config = {
@@ -19,7 +20,19 @@
   <body>
     <div class="searchbar">
       <p class="zoekbalkText">welke link wil je zoeken?</p>
-      <input id="zoekbalk" type="text" name="yeet" placeholder="YEET">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div role="separator" class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </div>
+        <input type="text" class="form-control" aria-label="Text input with dropdown button">
+      </div>
     </div>
   </body>
 </html>
