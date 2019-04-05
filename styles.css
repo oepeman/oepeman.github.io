@@ -1,5 +1,5 @@
 body{
-  background-color: #2e2f30!important;
+  background-color: #2e2f30;
 }
 
 .downloadBar{
@@ -12,4 +12,12 @@ body{
 
 .zoekbalkText{
   font-size: 18px;
+  font-weight: 600;
+}
+
+.form-control{
+  margin-left: 5%;
+  margin-right: 5%;
+  max-width: 90%;
+  text-align: center;
 }
