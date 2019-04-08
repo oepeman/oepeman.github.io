@@ -1,9 +1,13 @@
-
+<!DOCTYPE html>
 <html>
   <head>
     <link rel="stylesheet" href="styles.css">
     <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
     <script>
       // Initialize Firebase
       var config = {
@@ -20,25 +24,33 @@
   <body>
     <div class="downloadBar">
       <br><br>
-     <p class="zoekbalkText">welke link wil je zoeken?</p>
+     <p class="zoekbalkText">Paste the youtube link here!</p>
       <div class="input-group">
-        <input id="form-control" type="text" class="form-control" aria-label="Text input with dropdown button">
         <div class="input-group-append">
       </div>
+      <br>
 
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown button
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">MP3</a>
-          <a class="dropdown-item" href="#">MP4</a>
-          <a class="dropdown-item" href="#">720p</a>
-          <a class="dropdown-item" href="#">1080p</a>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <button style="background-color: white;" class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kies bestand</button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">MP3</a>
+            <a class="dropdown-item" href="#">MP4</a>
+          </div>
         </div>
-        
+        <input type="text" class="form-control" aria-label="Text input with dropdown button">
+      </div>
         <br>
-
+        <!-- <div class="jumbotron"> -->
+        <div class="card text-white bg-danger mb-3" style="width: 18rem; width: 50%; margin-left: 23%;">
+          <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+            <div class="card-body">
+              <h5 class="card-title">The video</h5>
+              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              <a href="#" class="btn btn-primary">Download!</a>
+            </div>
+          </div>
+        <!-- </div> -->
       </div>
     </div>
   </body>
