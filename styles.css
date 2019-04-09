@@ -2,6 +2,10 @@ body{
   background-color: #091047!important;
 }
 
+div.hidden{
+  display: none
+}
+
 .downloadBar{
   margin-top: 30px;
   margin-left: 5%;

@@ -40,17 +40,23 @@
         </div>
         <input type="text" class="form-control" aria-label="Text input with dropdown button">
       </div>
-        <br>
-        <!-- <div class="jumbotron"> -->
+      <br>
         <div class="card text-white bg-danger mb-3" style="width: 18rem; width: 50%; margin-left: 23%;">
           <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-            <div class="card-body">
-              <h5 class="card-title">The video</h5>
-              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-              <a href="#" class="btn btn-primary">Download!</a>
-            </div>
+          <div class="card-body">
+            <h5 class="card-title">The video</h5>
+            <a href="#" class="btn btn-primary">Download!</a>
           </div>
-        <!-- </div> -->
+        </div>
+
+
+        <div id="extraControls" class="hidden">test
+        </div>
+        <script>
+          $(document).ready(function() {
+              $("div#extraControls").removeClass("hidden");
+          });
+        </script>
       </div>
     </div>
   </body>
