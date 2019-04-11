@@ -67,6 +67,21 @@
               $("#SearchButton").hide();
             });
           });
+
+
+          var youtubedl = require('youtube-dl');
+          var url = 'https://youtu.be/PizwcirYuGY';
+
+          var options = {
+            // Downloads available thumbnail.
+            all: false,
+            // The directory to save the downloaded files in.
+            cwd: __dirname,
+          };
+          youtubedl.getThumbs(url, options, function(err, files) {
+            if (err) throw err;
+            console.log('thumbnail file downloaded:', files);
+          });
         </script>
       </div>
     </div>
