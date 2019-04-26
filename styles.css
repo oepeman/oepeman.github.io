@@ -9,11 +9,17 @@ div.hidden{
 .downloadBar{
   margin-top: 30px;
   margin-left: 5%;
-  margin-right: 5%;
   margin-bottom: 5%;
   max-width: 90%;
   background-color: hsl(0, 0%, 6.7%);
   border-radius: 8px;
+ }
+ #hystoryBar{
+   max-width: 90%;
+   background-color: white;
+   margin-left: 5%;
+   margin-top: 30px;
+   border-radius: 8px;
  }
 
 .zoekbalkText{
@@ -46,4 +52,5 @@ div.hidden{
 #SearchButton{
   margin-left: 45%;
   margin-right: auto;
+  margin-bottom: 15px;
 }
