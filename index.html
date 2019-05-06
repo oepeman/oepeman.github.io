@@ -112,26 +112,26 @@
                 
                 
                 
-                function searchHistory(searchParam) {
-                  const maxHistoryLength = 3;
-                  const history = JSON.parse(localStorage.getItem('.formControl') || '[]');
-                  const isHistoryMaxed = history.length === maxHistoryLength;
-                  const workingHistory = isHistoryMaxed ? history.slice(1) : history;
-                  const updatedHistory = workingHistory.concat(searchParam);
+//                 function searchHistory(searchParam) {
+//                   const maxHistoryLength = 3;
+//                   const history = JSON.parse(localStorage.getItem('.formControl') || '[]');
+//                   const isHistoryMaxed = history.length === maxHistoryLength;
+//                   const workingHistory = isHistoryMaxed ? history.slice(1) : history;
+//                   const updatedHistory = workingHistory.concat(searchParam);
 
-                  localStorage.setItem('.formControl', JSON.stringify(updatedHistory));
-                }
+//                   localStorage.setItem('.formControl', JSON.stringify(updatedHistory));
+//                 }
 
-                function updateSearchHistoryUi(){
-                  const history = JSON.parse(localStorage.getItem('.formControl') || '[]');
+//                 function updateSearchHistoryUi(){
+//                   const history = JSON.parse(localStorage.getItem('.formControl') || '[]');
 
-                  $('#history').empty().append(history.map(v => '
-                    <li>
-                      <i class="fa fa-long-arrow-right icons"></i>
-                      <p class="list-title">${v}</p>
-                    </li>
-                  ').join(''));
-                }
+//                   $('#history').empty().append(history.map(v => '
+//                     <li>
+//                       <i class="fa fa-long-arrow-right icons"></i>
+//                       <p class="list-title">${v}</p>
+//                     </li>
+//                   ').join(''));
+//                 }
 
               </script>
             </div>
