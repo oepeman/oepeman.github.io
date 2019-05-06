@@ -54,3 +54,12 @@ div.hidden{
   margin-right: auto;
   margin-bottom: 15px;
 }
+
+ul{
+  background-color: lightgrey;
+  border-radius: 4px;
+}
+
+#historyBar{
+  margin-top: 30px;
+}
